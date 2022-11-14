@@ -31,5 +31,11 @@ pipeline {
                 
             }
         }
+        
+        stage ('printing') {
+            steps {
+                sh echo "building is done"
+            }
+        }
     }
 }
