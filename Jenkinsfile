@@ -34,7 +34,7 @@ pipeline {
         
         stage ('printing') {
             steps {
-                sh echo "building is done"
+                echo "building is done"
             }
         }
     }
