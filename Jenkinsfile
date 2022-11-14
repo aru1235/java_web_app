@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environmental {
+        PATH = "/opt/maven/bin:$PATH"
+    }
 
     stages {
         stage ('Clean Stage') {
